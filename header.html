@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='keywords' content="关键词">
+    <meta name="description" content="网站描述">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/base.css"> -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- <script src="./js/jquery-1.12.4.min.js"></script> -->
+    <script src="./js/move.js"></script>
+    <script>
+        $(function(){
+            $('.first-list>li').hover(function(){
+                $(this).find('ol').stop().slideDown(600,'elasticOut');
+            },function(){
+                $(this).find('ol').stop().slideUp(600,'elasticIn');
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- 头部页面部分 -->
+    <section class="header">
+        <div class="container">
+            <a href="./index.html" class="logo fl">卓新科技</a>
+            <div class="nav fr">
+                <ul class="first-list">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="#">翡翠学院</a><span></span>
+                    <ol class="second-list">
+                        <li><a href="./aboutxx.html">小鸟掌学官网</a><span></span></li>
+                        <li><a href="./aboutxx.html#1">小鸟掌学概述</a><span></span></li>
+                        <li><a href="./aboutxx.html#2">对企业的价值</a><span></span></li>
+                        <li><a href="./aboutxx.html#3">小鸟掌学</a><span></span></li>
+                        <li><a href="./aboutxx.html#4">微课联盟</a><span></span></li>
+                        <li><a href="./aboutxx.html#4">APP下载</a><span></span></li>
+                    </ol>
+                    </li>
+                    <li><a href="./lie.html">卓新动态</a></li>
+                    <li><a href="#">企业文化</a><span></span>
+                    <ol class="second-list">
+                        <li><a href="./neirong.html?type=companyIdea">公司理念</a><span></span></li>
+                        <li><a href="./neirong.html?type=companyCulture">公司文化</a><span></span></li>
+                        <li><a href="./neirong.html?type=companyEnvironment">公司氛围</a><span></span></li>
+                    </ol>
+                    </li>
+                    <li><a href="#">人力资源</a><span></span>
+                    <ol class="second-list">
+                        <li><a href="./neirong.html?type=talents">人才理念</a><span></span></li>
+                        <li><a href="./neirong.html?type=team">团队介绍</a><span></span></li>
+                        <li><a href="./neirong.html?type=joinUs">招聘信息</a><span></span></li>
+                    </ol>
+                    </li>
+                    <li><a href="./neirong.html?type=telUs">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
